@@ -10,4 +10,6 @@ public interface IAlienService {
     Long saveAlien(RequestAlienDto alienDto);
     ResponseAlienDto getAlien(Long id);
     List<ResponseAlienDto> getAllAliens();
+    List<ResponseAlienDto> findAliensByAge(int age);
+    ResponseAlienDto findAliensByAgeAndName(int age, String name);
 }
